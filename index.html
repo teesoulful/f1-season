@@ -290,7 +290,17 @@
     thead th.rd,td.rd{display:none}
     thead th.gp{padding-left:11px}
     td.gp input{padding-left:11px;font-size:13px}
-    thead th.dr{width:60px}
+    /* the whole sheet has to fit a phone without a sideways scroll,
+       otherwise the third driver's column is off the edge when you're
+       trying to type into it */
+    table{min-width:0}
+    thead th.dr{width:46px}
+    thead th.io{width:36px}
+    td.cell input{font-size:14px}
+    tbody tr.sub td.cell input{font-size:12px}
+    td.cell .pt{display:none}
+    .spr{padding:3px 4px;font-size:8px}
+    .drop{font-size:14px;padding:3px 3px;margin-left:0}
   }
 </style>
 
