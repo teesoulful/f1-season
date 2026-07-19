@@ -732,7 +732,7 @@
     var box = el("div","notice");
     var p = el("p");
     var done = pending.races.filter(raceRun).length;
-    p.appendChild(el("strong","Someone shared a season with you."));
+    p.appendChild(el("strong", null, "Someone shared a season with you."));
     p.appendChild(document.createTextNode(
       " " + done + " of " + pending.races.length +
       " rounds run. You've already got results of your own saved here."));
